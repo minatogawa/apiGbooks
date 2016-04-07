@@ -49,7 +49,7 @@ if (Meteor.isServer) {
           author: item.volumeInfo.authors,
           link: item.volumeInfo.infoLink,
           snippet: item.searchInfo && item.searchInfo.textSnippet
-      };
+        };
 
         self.added('books', Random.id(), doc);
       });
